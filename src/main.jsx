@@ -11,7 +11,7 @@ import Info from "./assets/components/Info";
 
 const router = createBrowserRouter([
   {
-    path: "/api-pays/",
+    path: "/",
     element: <App/>,
   },
   {
