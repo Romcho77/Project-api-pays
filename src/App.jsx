@@ -72,7 +72,7 @@ function App() {
        {
         filteredData.map((element,index)=>(
           region == "" ?       
-            <Link to={`/${element.cca3}`}  style={{backgroundColor: theme==false ? "rgb(254 243 199)" :   "rgb(17 94 89)"}}  key={index} className={theme == false ? 'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-black shadow-xl' :   'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-white shadow-xl'}>
+            <Link to={`/api-pays/${element.cca3}`}  style={{backgroundColor: theme==false ? "rgb(254 243 199)" :   "rgb(17 94 89)"}}  key={index} className={theme == false ? 'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-black shadow-xl' :   'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-white shadow-xl'}>
               <div  className='w-[100%] font-bold flex flex-col ps-5 justify-center items-start'>
                 <p  style={{color: theme ? "beige" :   "black"}} className='text-[20px] mb-5 w-[100%]' >{element.name.common}</p>
                 <p  className='text-sky-300' > {element.translations.rus.common}</p> 
@@ -86,7 +86,7 @@ function App() {
           </Link> : 
 
           element.region == region ? 
-          <Link to={`/${element.cca3}`}  style={{backgroundColor: theme==false ? "rgb(254 243 199)" :   "rgb(17 94 89)"}}  key={index} className={theme == false ? 'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-black shadow-xl' :   'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-white shadow-xl'}>
+          <Link to={`/api-pays/${element.cca3}`}  style={{backgroundColor: theme==false ? "rgb(254 243 199)" :   "rgb(17 94 89)"}}  key={index} className={theme == false ? 'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-black shadow-xl' :   'w-[300px] h-[380px] mt-8 pt-4 bg-teal-800 rounded-xl text-indigo-950 hover:text-indigo-800 duration-500 hover:translate-y-[-10px] hover:bg-lime-200 flex flex-col items-center justify-between shadow-white shadow-xl'}>
             <div  className='w-[100%] font-bold flex flex-col ps-5 justify-center items-start'>
               <p  style={{color: theme ? "beige" :   "black"}} className='text-[20px] mb-5 w-[100%]' >{element.name.common}</p>
               <p  className='text-sky-300' > {element.translations.rus.common}</p> 

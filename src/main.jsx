@@ -11,11 +11,11 @@ import Info from "./assets/components/Info";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/api-pays/",
     element: <App/>,
   },
   {
-    path: "/:id",
+    path: "/api-pays/:id",
     element: <Info/>,
   },
 ]);

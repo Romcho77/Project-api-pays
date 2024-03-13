@@ -22,7 +22,7 @@ const {id}= useParams()
 
 
         />
-        <Link to={"/"} className=' ps-[130px] '>
+        <Link to={"/api-pays/"} className=' ps-[130px] '>
             <button className="w-[120px] h-[50px] relative  shadow-slate-500 shadow-md mt-6 rounded-md">⏪Back</button>
         </Link>
     
@@ -61,7 +61,7 @@ const {id}= useParams()
                   value.borders.map((border,key)=> {
                     return(
                       value.cca3 == id &&
-                    <Link key={key} to={`/${(Object.values(border).join(""))}`} className='text-[18px] text-center text-gray-900 font-medium'>
+                    <Link key={key} to={`/api-pays/${(Object.values(border).join(""))}`} className='text-[18px] text-center text-gray-900 font-medium'>
                       
                         {Object.values(border)}
                         
