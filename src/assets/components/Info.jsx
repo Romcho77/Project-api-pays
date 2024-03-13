@@ -61,7 +61,7 @@ const {id}= useParams()
                   value.borders.map((border,key)=> {
                     return(
                       value.cca3 == id &&
-                    <Link key={key} to={`/api-pays/${(Object.values(border).join(""))}`} className='text-[18px] text-center text-gray-900 font-medium'>
+                    <Link key={key} to={`/pays/${(Object.values(border).join(""))}`} className='text-[18px] text-center text-gray-900 font-medium'>
                       
                         {Object.values(border)}
                         

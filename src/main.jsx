@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <App/>,
   },
   {
-    path: "/api-pays/:id",
+    path: "/pays/:id",
     element: <Info/>,
   },
 ]);
