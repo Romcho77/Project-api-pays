@@ -22,7 +22,7 @@ const {id}= useParams()
 
 
         />
-        <Link to={"/"} className=' ps-[130px] '>
+        <Link to={"/home"} className=' ps-[130px] '>
             <button className="w-[120px] h-[50px] relative  shadow-slate-500 shadow-md mt-6 rounded-md">⏪Back</button>
         </Link>
     

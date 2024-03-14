@@ -11,7 +11,7 @@ import Info from "./assets/components/Info";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <App/>,
   },
   {
